@@ -1,8 +1,13 @@
-* {
+
+       * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,11 +18,24 @@ body {
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #1a1a1a;
     padding: 1rem 2rem;
     border-bottom: 2px solid #e84c1e;
 }
 
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    color: #e84c1e;
+}
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -50,12 +68,199 @@ nav {
     font-size: 1.3rem !important;
 }
 
+.name p {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
 footer {
     text-align: center;
     padding: 20px;
     border-top: 2px solid #e84c1e;
     color: #aaaaaa;
-    position: fixed;
-    bottom: 0;
+    margin-top: 50px;
     width: 100%;
+}
+
+.team {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2rem;
+    color: #e84c1e;
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+.member {
+    background-color: #1a1a1a;
+    border: 2px solid #e84c1e;
+    padding: 20px 30px;
+    border-radius: 10px;
+    min-width: 150px;
+    max-width: 200px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.member:hover {
+    background: #e84c1e;
+}
+.member p {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+a:link {
+    color: #e84c1e; /* UNVISITED LINK */
+    text-decoration: none;
+}
+a:visited {
+    color: #e84c1e; /* VISITED LINK */
+    text-decoration: none;
+}
+
+a:hover {
+    color: greenyellow; 
+    text-decoration: none;
+}
+ a:active {
+    color: orangered; /* ACTIVE */
+    text-decoration: none;
+ }
+
+ .concepts-section {
+    padding: 40px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .concepts-section h2 {
+    color: #ff6600;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .concepts-section h3 {
+    color: #ff6600;
+  }
+
+  .concept-item {
+    margin-bottom: 20px;
+  }
+
+  .typing {
+    border-right: 3px solid #e84c1e;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    max-width: 100%;
+    font-size: clamp(1.2rem, 4vw, 3rem);
+    animation: typing 3s steps(30) forwards, blink 0.7s infinite;
+}
+
+.typing2 {
+    border-right: 3px solid #e84c1e;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    max-width: 100%;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    animation: typing 2s steps(40) forwards 3s, blink 0.7s infinite;
+}
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%;}
+  }
+
+  @keyframes blink {
+    0%, 100% { border-color: #e84c1e; }
+    50% {border-color: transparent;}
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .typing {
+        font-size: 1.8rem;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    .typing, .typing2 {
+        display: inline-block;
+        max-width: 100%;
+    }
+  }
+
+  .terminal-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.terminal-section h2 {
+    font-size: 2rem;
+    color: #e84c1e;
+    margin-bottom: 30px;
+}
+
+.terminal-box {
+    background: #0d0d0d;
+    border: 1px solid #e84c1e;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background: #1a1a1a;
+    padding: 10px 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.terminal-body {
+    padding: 20px;
+    text-align: left;
+    font-family: monospace;
+    font-size: 0.95rem;
+    line-height: 2;
+}
+
+.prompt {
+    color: #27c93f;
+    margin-right: 8px;
+}
+
+.output {
+    color: #aaaaaa;
+    padding-left: 20px;
 }
