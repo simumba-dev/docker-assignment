@@ -211,6 +211,20 @@ a:hover {
     }
   }
 
+  @media (max-width: 380px) {
+    .typing {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+    .typing2 {
+        font-size: 0.75rem;
+        max-width: 100%;
+    }
+    .hero {
+        padding: 40px 10px;
+    }
+}
+
   .terminal-section {
     padding: 50px 20px;
     text-align: center;
