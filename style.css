@@ -178,6 +178,7 @@ a:hover {
     white-space: nowrap;
     overflow: hidden;
     width: 0;
+    font-size: 0.85rem;
     max-width: 100%;
     font-size: clamp(0.9rem, 3vw, 1.1rem);
     animation: typing 2s steps(40) forwards 3s, blink 0.7s infinite;
@@ -198,7 +199,8 @@ a:hover {
         font-size: 1.8rem;
     }
     .typing {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
+        max-width: 100%;
     }
     .logo {
         font-size: 1rem;
