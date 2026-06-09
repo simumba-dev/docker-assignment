@@ -1,0 +1,10 @@
+# Ignore the Dockerfile itself
+Dockerfile
+
+# Ignore git source control files
+.git
+.gitignore
+
+# Ignore operating system junk files
+.DS_Store
+Thumbs.db
